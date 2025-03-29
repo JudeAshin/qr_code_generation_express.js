@@ -5,7 +5,10 @@ document.getElementById('qr-form').addEventListener('submit', function (e) {
 	const price = document.getElementById('qr-price').value;
 	const data = { id, price }
 
-	fetch('http://localhost:3000/generate-qr', {
+	fetch(
+		// 'http://localhost:3000/generate-qr',
+		'https://qr-code-generation-express-3bv3f2flg-judeashins-projects.vercel.app/generate-qr',
+		{
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
