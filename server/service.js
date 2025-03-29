@@ -12,6 +12,5 @@ exports.generateQRCode = async (qrCodeText) => {
 		margin: 1
 	};
 
-	const qrCodeBuffer = await QRCode.toBuffer(qrCodeText, options);
-	return qrCodeBuffer;
+	return QRCode.toBuffer(qrCodeText, options);
 };
