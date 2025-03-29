@@ -7,7 +7,7 @@ document.getElementById('qr-form').addEventListener('submit', function (e) {
 
 	fetch(
 		// 'http://localhost:3000/generate-qr',
-		'https://qr-code-generation-express-3bv3f2flg-judeashins-projects.vercel.app/generate-qr',
+		'https://qr-code-generation-express-js.onrender.com/generate-qr',
 		{
 		method: 'POST',
 		headers: {
